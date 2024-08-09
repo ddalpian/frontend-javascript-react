@@ -1,0 +1,11 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  ci-test:
+    name: CI / Test
+    uses: ddalpian/workflow-templates/.github/workflows/ci-test.yaml@master
+    with:
+      framework: javascript/testing-library
